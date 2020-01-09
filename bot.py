@@ -1,8 +1,5 @@
 import discord
-from discord.ext.commands import Bot
-import discord.ext import commands
-import asyncio
-import time
+from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix = '.')
