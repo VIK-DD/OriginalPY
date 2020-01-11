@@ -2,11 +2,11 @@ import discord
 from discord.ext import commands
 import os
 
-client = commands.Bot(command_prefix = '/')
+client = commands.Bot(command_prefix = '|')
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game('RubyBoT'))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="@RubyBoT"))
     print('Logged in as {0} ({0.id})'.format(client.user))
     print('-----------------------------------------------')
 
