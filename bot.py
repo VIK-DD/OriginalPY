@@ -6,7 +6,7 @@ client = commands.Bot(command_prefix = '|')
 
 @client.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Status.idle.Activity(type=discord.ActivityType.listening, name="a song"))
+    await client.change_presence(activity=discord.Status.idle.Activity(type=discord.ActivityType.listening, name="a song"))
     print('Logged in as {0} ({0.id})'.format(client.user))
     print('-----------------------------------------------')
 
