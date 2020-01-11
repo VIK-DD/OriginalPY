@@ -6,7 +6,7 @@ client = commands.Bot(command_prefix = '/')
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game('Streaming RubyBoT'))
+    await client.change_presence(status=discord.Status.do_not_disturb, activity=discord.Game('RubyBoT'))
     print('Logged in as {0} ({0.id})'.format(client.user))
     print('-----------------------------------------------')
 
