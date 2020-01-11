@@ -6,7 +6,7 @@ client = commands.Bot(command_prefix = '|')
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.idle, activity=discord.Listening('Developing Session'))
+    await client.change_presence(activity=discord.Streaming(name="@RubyBoT", url=https://www.twitch.tv/ninja))
     print('Logged in as {0} ({0.id})'.format(client.user))
     print('-----------------------------------------------')
 
