@@ -22,5 +22,10 @@ async def on_member_remove(member):
 async def on_member_join(member):
     role = discord.utils.get(member.guild.roles, name="Member")
     await member.add_roles(role)
+    
+@client.event
+async def on_member_join(member):
+    role = discord.utils.get(member.guild.roles, name="Membru")
+    await member.add_roles(role)
  
 client.run(os.getenv('TOKEN'))
