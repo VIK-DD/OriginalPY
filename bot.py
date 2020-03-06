@@ -16,7 +16,7 @@ async def on_member_remove(member):
 
 @client.event
 async def on_member_join(member):
-    role = discord.utils.get(member.guild.roles, name="Member")
+    role = discord.utils.get(member.guild.roles, name="Membru")
     await member.add_roles(role)
     
  
@@ -28,7 +28,7 @@ async def on_member_join(member):
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
     embed.timestamp = datetime.datetime.utcnow()
 
-    channel = client.get_channel(id=673581023166070814)
+    channel = client.get_channel(id=684096171874189561)
 
     await channel.send(embed=embed)
 
@@ -40,7 +40,7 @@ async def on_member_remove(member):
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
     embed.timestamp = datetime.datetime.utcnow()
 
-    channel = client.get_channel(id=673581059086090261)
+    channel = client.get_channel(id=684097193820553236)
 
     await channel.send(embed=embed)
 
