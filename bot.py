@@ -7,7 +7,7 @@ client = commands.Bot(command_prefix = '!')
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game("Beta {!}"))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Game("Support"))
     print('Logged in as {0} ({0.id})'.format(client.user))
     print('-----------------------------------------')
 
