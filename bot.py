@@ -84,7 +84,7 @@ async def unmute(ctx, member : discord.Member):
 @client.event
 async def on_member_join(member):
     print(f'{member} has joined the server.')
-    embed = discord.Embed(colour=0x95efcc, description=f"Welcome to xSupportGamingx! You are the {len(list(member.guild.members))} member!", timestamp=datetime.datetime.utcfromtimestamp(1553629094))
+    embed = discord.Embed(colour=0x95efcc, description=f"Welcome to ™Prime LFG™! You are the {len(list(member.guild.members))} member!", timestamp=datetime.datetime.utcfromtimestamp(1553629094))
     embed.set_thumbnail(url=f"{member.avatar_url}")
     embed.set_author(name=f"{member.name}", icon_url=f"{member.avatar_url}")
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
@@ -94,7 +94,7 @@ async def on_member_join(member):
 
     await channel.send(embed=embed)
 
-    role = discord.utils.get(member.guild.roles, name="Member")
+    role = discord.utils.get(member.guild.roles, name="Membru")
     await member.add_roles(role)
 
 @client.event
