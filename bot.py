@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 import datetime
 
-client = commands.Bot(command_prefix = '!')
+client = commands.Bot(command_prefix = '')
 
 @client.event
 async def on_ready():
@@ -24,6 +24,10 @@ async def clear(ctx, ammount=1):
 @client.command()
 async def prefix(ctx):
     await ctx.send('My prefix is "!"')
+    
+@client.command()
+async def invite(ctx):
+    await ctx.send('https://discord.gg/BVfYJHa')
 
 @client.command()
 async def kick(ctx, member : discord.Member, *, reason=None):
