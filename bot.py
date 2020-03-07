@@ -90,7 +90,7 @@ async def on_member_join(member):
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
     embed.timestamp = datetime.datetime.utcnow()
 
-    channel = client.get_channel(id=678346519765843970)
+    channel = client.get_channel(id=684096171874189561)
 
     await channel.send(embed=embed)
 
@@ -106,7 +106,7 @@ async def on_member_remove(member):
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
     embed.timestamp = datetime.datetime.utcnow()
 
-    channel = client.get_channel(id=678346530163392522)
+    channel = client.get_channel(id=684097193820553236)
 
     await channel.send(embed=embed)
 
