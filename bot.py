@@ -23,11 +23,11 @@ async def clear(ctx, ammount=1):
 
 @client.command()
 async def prefix(ctx):
-    await ctx.send('My prefix is "!"')
+    await ctx.send('My prefix is "#"')
     
 @client.command()
 async def invite(ctx):
-    await ctx.send('https://discord.gg/BVfYJHa')
+    await ctx.send('https://discord.gg/Znnuarw')
 
 @client.command()
 async def kick(ctx, member : discord.Member, *, reason=None):
