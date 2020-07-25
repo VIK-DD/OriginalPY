@@ -3,11 +3,11 @@ from discord.ext import commands
 import os
 import datetime
 
-client = commands.Bot(command_prefix = '!')
+client = commands.Bot(command_prefix = '#')
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.idle, activity=discord.Game("Support"))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="XzR Community"))
     print('Logged in as {0} ({0.id})'.format(client.user))
     print('-----------------------------------------')
 
@@ -90,12 +90,9 @@ async def on_member_join(member):
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
     embed.timestamp = datetime.datetime.utcnow()
 
-    channel = client.get_channel(id=684096171874189561)
+    channel = client.get_channel(id=736688389293604995)
 
     await channel.send(embed=embed)
-
-    role = discord.utils.get(member.guild.roles, name="Membru")
-    await member.add_roles(role)
 
 @client.event
 async def on_member_remove(member):
@@ -106,7 +103,7 @@ async def on_member_remove(member):
     embed.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
     embed.timestamp = datetime.datetime.utcnow()
 
-    channel = client.get_channel(id=684097193820553236)
+    channel = client.get_channel(id=736688438627270697)
 
     await channel.send(embed=embed)
 
